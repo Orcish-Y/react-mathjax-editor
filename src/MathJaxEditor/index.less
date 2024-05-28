@@ -1,0 +1,190 @@
+@prefixCls: 'mathjax-editor';
+@EditorPrefixCls: ~'@{prefixCls}-editor';
+@panelPrefixCls: ~'@{prefixCls}-panel';
+@DropdownPanelCls: ~'@{panelPrefixCls}-series-panel';
+@MathJaxSpreadCls: ~'@{panelPrefixCls}-spread';
+@borderColor: #e3e4e6;
+@backgroundColor: #fafafb;
+@grayBackgroundColor: #d9d9d9;
+@blackBackgroundColor: #000;
+@tabNavBackgroundColor: rgba(0, 10, 26, 0.03);
+@borderRadius8: 8px;
+.@{EditorPrefixCls} {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 32px;
+  border: 1px solid @grayBackgroundColor;
+  border-radius: @borderRadius8;
+  &.@{EditorPrefixCls}-active {
+    outline: 0;
+    border-color: #1677ff;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+  }
+  &.@{EditorPrefixCls}-invalid {
+    border-color: #ff4d4f;
+    &.@{EditorPrefixCls}-active {
+      box-shadow: 0 0 0 2px rgba(255,77,79, 0.1);
+    }
+  }
+  &.@{EditorPrefixCls}-disabled {
+    color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: #d9d9d9;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  &.@{EditorPrefixCls}-ghost {
+    border-color: transparent !important;
+    box-shadow: 0 0 0 0 transparent !important;
+  }
+  &-popover {
+    &.ant-popover-placement-bottom {
+      .ant-popover-arrow::after {
+        background-color: #f2f2f4;
+      }
+    }
+    .ant-popover-arrow::after {
+      background-color: @backgroundColor;
+    }
+  }
+  &-placeholder {
+    padding-inline: 10px;
+    color: rgba(0, 0, 0, 0.25);
+    line-height: 32px;
+  }
+}
+
+.@{panelPrefixCls} {
+  background-color: @backgroundColor;
+  padding: 1px;
+  &-tabs.ant-tabs {
+    position: relative;
+    background-color: @backgroundColor;
+    border-radius: 6px;
+    .ant-tabs-ink-bar {
+      background: transparent;
+    }
+    .ant-tabs-nav {
+      margin-bottom: 12px;
+      padding-top: 4px;
+      height: 44px;
+      background-color: @tabNavBackgroundColor;
+
+      &::before {
+        content: ' ';
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        border-bottom:1px solid @grayBackgroundColor;
+      }
+
+      .ant-tabs-nav-wrap {
+        padding-left: 16px;
+      }
+    }
+    .ant-tabs-content-holder {
+      padding-inline: 16px;
+    }
+
+    .ant-tabs-tab {
+      position: relative;
+      margin: 0;
+      padding-inline: 24px;
+      margin-left: 0 !important;
+      &::after {
+        content: ' ';
+        position: absolute;
+        right: -2px;
+        height: 24px;
+        width: 1px;
+        background-color: @grayBackgroundColor;
+      }
+      &-active {
+        z-index: 99;
+        border-radius: 6px 6px 0 0;
+        border: 1px solid @grayBackgroundColor;
+        background-color: @backgroundColor;
+        border-bottom: 0;
+        &::after {
+          height: 0;
+        }
+      }
+    }
+  }
+  &-monaco-editor {
+    margin: 8px 16px 12px;
+    border-radius: @borderRadius8;
+    height: 108px;
+    border: 1px solid @grayBackgroundColor;
+    background-color: @backgroundColor;
+    overflow: hidden;
+  }
+  &-exit-prompt {
+    padding: 0 16px 16px 0;
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(0, 10, 26, 0.47);
+  }
+}
+
+.@{DropdownPanelCls} {
+  &-mathJax-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 72px;
+    height: 88px;
+    border-radius: @borderRadius8;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.02);
+    &.@{DropdownPanelCls}-mathJax-set-active {
+      background-color: #e6f4ff;
+      border: 1px solid #1677ff;
+    }
+    &-label {
+      font-size: 8px;
+      line-height: 20px;
+    }
+    &-cart-down {
+      height: 12px;
+      img {
+        position: relative;
+        top: -9px;
+      }
+    }
+  }
+}
+
+.@{MathJaxSpreadCls} {
+  width: 100%;
+  &-title {
+    font-size: 16px;
+    padding: 8px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+  }
+  &-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 8px 8px;
+    margin-block: 12px;
+    .MathJax {
+      box-sizing: border-box;
+      display: flex !important;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 !important;
+      padding: 8px;
+      min-height: 30px;
+      min-width: 30px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+    }
+  }
+}
