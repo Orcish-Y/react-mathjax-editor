@@ -14,15 +14,15 @@
 &emsp;&emsp;本库提供了一个易于使用的 React 组件，用于数学公式的可视化输入。用户可以通过点击操作，在直观的输入面板上构建所需的数学公式，并且这些公式会实时地在界面上展示。此外，通过调整 schema（配置）参数，您可以定制输入面板中的公式符号，让这个组件更契合您的项目。无论是数学、化学还是其余科研符号，这款组件都能为您提供灵活、便捷的公式输入体验。安装和使用本组件非常简单，无需复杂的配置和 mathjax 知识。只需按照提供的指南进行操作，即可轻松将这款强大的数学公式输入组件集成到您的 React 项目中。
 
 </div>
-[English](./README-zh_CN.md) · 中文
+[English](./README.md) · 中文
 
 #### Mathjax editor 实例
 
-![Mathjax editor 实例](assets\images\mathjaxEditor.gif 'Mathjax editor 实例')
+![Mathjax editor 实例](assets/images/mathjaxEditor.gif 'Mathjax editor 实例')
 
 #### Mathjax editor panel 实例
 
-![Mathjax editor panel 实例](assets\images\mathjaxEditorPanel.gif 'Mathjax editor panel 实例')
+![Mathjax editor panel 实例](assets/images/mathjaxEditorPanel.gif 'Mathjax editor panel 实例')
 
 </div>
 
@@ -270,7 +270,7 @@ export type Schema = {
 }[];
 ```
 
-![schema 示意图](assets\images\schemaSchematicDiagram.jpg 'Magic Gardens')
+![schema 示意图](assets/images/schemaSchematicDiagram.jpg 'Magic Gardens')
 
 ## Development
 

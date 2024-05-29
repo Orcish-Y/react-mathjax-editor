@@ -14,15 +14,15 @@
 &emsp;&emsp;This library provides a user-friendly React component for visualizing mathematical formulas. Users can build the desired mathematical formulas by clicking and interacting with an intuitive input panel, and these formulas will be displayed in real-time on the interface. Additionally, by adjusting schema (configuration) parameters, you can customize the formula symbols in the input panel, making this component better suited to your project. Whether it's mathematical, chemical, or other scientific symbols, this component can provide you with a flexible and convenient formula input experience. Installing and using this component is very simple, without complex configuration or knowledge of mathjax. Simply follow the provided guidelines, and you can easily integrate this powerful mathematical formula input component into your React project.
 
 </div>
-English · [中文](./README.md)
+English · [中文](./README-zh_CN.md)
 
 #### Mathjax editor demo
 
-![Mathjax editor demo](assets\images\mathjaxEditor.gif 'Mathjax editor demo')
+![Mathjax editor demo](assets/images/mathjaxEditor.gif 'Mathjax editor demo')
 
 #### Mathjax editor panel demo
 
-![Mathjax editor panel demo](assets\images\mathjaxEditorPanel.gif 'Mathjax editor panel demo')
+![Mathjax editor panel demo](assets/images/mathjaxEditorPanel.gif 'Mathjax editor panel demo')
 
 </div>
 
@@ -270,7 +270,7 @@ export type Schema = {
 }[];
 ```
 
-![schema schematic diagram](assets\images\schemaSchematicDiagram.jpg 'Magic Gardens')
+![schema schematic diagram](assets/images/schemaSchematicDiagram.jpg 'Magic Gardens')
 
 ## Development
 
