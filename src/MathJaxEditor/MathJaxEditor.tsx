@@ -12,7 +12,7 @@ interface MathJaxPanelEditor {
   ['aria-invalid']?: string;
   ghost?: boolean;
   mathJaxPanelWidth?: number | string;
-  mathJaxSetWidth?: number  | string;
+  mathJaxSetWidth?: number | string;
   disabled?: boolean;
   style?: React.CSSProperties;
   placeholder?: string;
@@ -35,10 +35,6 @@ const MathJaxEditor: React.FC<MathJaxPanelEditor> = ({
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState<string>();
   const mathJaxRef = useRef<MathJaxPanelRef>(null);
-
-  const hideMathJaxPanel = () => {
-    setOpen(false);
-  };
 
   return (
     <Popover
@@ -70,7 +66,6 @@ const MathJaxEditor: React.FC<MathJaxPanelEditor> = ({
           }}
           ref={mathJaxRef}
           width={mathJaxPanelWidth}
-          hideMathJaxPanel={hideMathJaxPanel}
           mathJaxSetWidth={mathJaxSetWidth}
           autoFocusOnMount
           schema={schema}

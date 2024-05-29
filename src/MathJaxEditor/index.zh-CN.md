@@ -42,3 +42,39 @@
 ### better-react-mathjax API
 
 better-react-mathjax API 请查看[官方文档](https://www.npmjs.com/package/better-react-mathjax)
+
+### schema 说明
+
+```ts
+/** 用于定制 panel 面板的符号 */
+export type Schema = {
+  key: string;
+  /** panel 上的 tab 的名字 */
+  label: string;
+  /** panel 上的 tab 的数据 */
+  machJaxSeries: {
+    key: string;
+    /** 集合名 */
+    label: string;
+    /** 集合图标 */
+    illustrate: string;
+    /** 集合数据 */
+    mathJaxGroup: {
+      /** 分组名 */
+      groupName: string;
+      /** 分组数据 */
+      mathJax: (
+        | string
+        | {
+            /** 示例 */
+            demo: string;
+            /** mathjax */
+            mathJax: string;
+          }
+      )[];
+    }[];
+  }[];
+}[];
+```
+
+![schema 示意图](./assets/images/schemaSchematicDiagram.jpg 'schema 示意图')

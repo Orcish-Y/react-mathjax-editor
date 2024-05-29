@@ -9,7 +9,7 @@ import { Button, Form, Input } from 'antd';
 import React from 'react';
 import { MathJaxEditor } from 'react-mathjax-editor';
 
-const App: React.FC = () => {
+export default () => {
   return (
     <Form onFinish={(value) => console.log(value)}>
       <Form.Item label="Field A" name="fieldA" rules={[{ required: true }]}>
@@ -26,5 +26,3 @@ const App: React.FC = () => {
     </Form>
   );
 };
-
-export default App;
