@@ -1,7 +1,17 @@
 {
   "name": "react-mathjax-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mathjax editor for react",
+  "keywords": [
+    "react",
+    "mathjax",
+    "visual",
+    "visual editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github.com/Orcish-Y/react-mathjax-editor.git"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
