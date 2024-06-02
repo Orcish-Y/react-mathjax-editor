@@ -18,11 +18,11 @@ English · [中文](./README-zh_CN.md)
 
 #### Mathjax editor demo
 
-![Mathjax editor demo](assets/images/mathjaxEditor.gif 'Mathjax editor demo')
+![Mathjax editor demo](https://raw.githubusercontent.com/Orcish-Y/react-mathjax-editor/main/assets/images/mathjaxEditor.gif 'Mathjax editor demo')
 
 #### Mathjax editor panel demo
 
-![Mathjax editor panel demo](assets/images/mathjaxEditorPanel.gif 'Mathjax editor panel demo')
+![Mathjax editor panel demo](https://raw.githubusercontent.com/Orcish-Y/react-mathjax-editor/main/assets/images/mathjaxEditorPanel.gif 'Mathjax editor panel demo')
 
 </div>
 
@@ -270,7 +270,7 @@ export type Schema = {
 }[];
 ```
 
-![schema schematic diagram](assets/images/schemaSchematicDiagram.jpg 'Magic Gardens')
+![schema schematic diagram](https://raw.githubusercontent.com/Orcish-Y/react-mathjax-editor/main/assets/images/schemaSchematicDiagram.jpg 'schema Schematic Diagram')
 
 ## Development
 

@@ -1,3 +1,5 @@
+import { FormattedMessage } from 'dumi';
+import React from 'react';
 import { formulaTemplate } from './formulaTemplate';
 import { shortcutTool } from './shortcutTool';
 
@@ -42,12 +44,14 @@ export type Schema = {
 export const schema: Schema[] = [
   {
     key: 'shortcut-tool',
-    label: '快捷输入',
+    label: (
+      <FormattedMessage id="MathJaxEditor-QuickInput" />
+    ) as unknown as string,
     machJaxSeries: shortcutTool,
   },
   {
     key: 'formula-template',
-    label: '公式模板',
+    label: '公式模板' as unknown as string,
     machJaxSeries: formulaTemplate,
   },
 ];

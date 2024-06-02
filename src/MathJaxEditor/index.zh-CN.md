@@ -77,4 +77,4 @@ export type Schema = {
 }[];
 ```
 
-![schema 示意图](./assets/images/schemaSchematicDiagram.jpg 'schema 示意图')
+![schema 示意图](https://raw.githubusercontent.com/Orcish-Y/react-mathjax-editor/main/assets/images/schemaSchematicDiagram.jpg 'schema 示意图')

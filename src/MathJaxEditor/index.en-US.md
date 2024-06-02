@@ -77,4 +77,4 @@ export type Schema = {
 }[];
 ```
 
-![schema schematic diagram](./assets/images/schemaSchematicDiagram.jpg 'schema schematic diagram')
+![schema schematic diagram](https://raw.githubusercontent.com/Orcish-Y/react-mathjax-editor/main/assets/images/schemaSchematicDiagram.jpg 'schema schematic diagram')
